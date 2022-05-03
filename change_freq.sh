@@ -11,7 +11,7 @@ do
 
     for i in {0..7}
     do 
-        ssh node$n cpufreq-set -c $i -f $freq
+        ssh node$n sudo cpufreq-set -c $i -f $freq
     done
 done
     
